@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joane | Software Engineer & Tech Explorer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #faf9f6; color: #4a4a4a; }
+        .lofi-card { background: white; border: 1px solid #e5e7eb; border-radius: 1rem; transition: transform 0.2s ease; }
+        .lofi-card:hover { transform: translateY(-4px); }
+        .code-font { font-family: 'Fira Code', monospace; }
+    </style>
+</head>
+<body class="max-w-4xl mx-auto px-6 py-12">
+
+    <header class="mb-16 text-center md:text-left">
+        <h1 class="text-4xl font-semibold mb-2">Hi, I'm <span class="text-emerald-600">Joane</span>.</h1>
+        <p class="text-lg text-gray-500 mb-6 italic">Software Engineering Student @ UNIMAS FCSIT</p>
+        <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm code-font text-emerald-700">
+            <span>#SarawakBased</span>
+            <span>#FlutterDev</span>
+            <span>#PHPLover</span>
+            <span>#GamerAtHeart</span>
+        </div>
+    </header>
+
+    <section class="mb-16">
+        <h2 class="text-xl font-semibold mb-4 flex items-center gap-2">
+            ✨ About Me
+        </h2>
+        <div class="lofi-card p-8 leading-relaxed">
+            I am a 23-year-old developer passionate about building digital solutions that make a real impact in my community. Whether I'm refactoring 
+            <b>PADiSmart</b> for the Sarawak Civil Service or debugging the <b>Kopidu</b> food ordering app, I love the challenge of turning logic into 
+            helpful tools. When I’m not coding, you’ll find me exploring the latest gadgets, playing <i>Hogwarts Legacy</i> (Slytherin represent! 🐍), 
+            or perfecting my skincare routine.
+        </div>
+    </section>
+
+    <section class="mb-16">
+        <h2 class="text-xl font-semibold mb-6">🛠️ Projects I've Built</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <div class="lofi-card p-6 border-t-4 border-emerald-500">
+                <h3 class="font-semibold text-lg mb-2">PADiSmart System</h3>
+                <p class="text-sm text-gray-500 mb-4">A land application management system for Sarawak Civil Service (DOA & JTS).</p>
+                <div class="flex gap-2 mb-4">
+                    <span class="bg-gray-100 px-2 py-1 text-[10px] rounded">PHP</span>
+                    <span class="bg-gray-100 px-2 py-1 text-[10px] rounded">MySQL</span>
+                    <span class="bg-gray-100 px-2 py-1 text-[10px] rounded">GIS Mapping</span>
+                </div>
+                <a href="#" class="text-xs font-bold text-emerald-600 hover:underline">View Technical Summary →</a>
+            </div>
+
+            <div class="lofi-card p-6 border-t-4 border-blue-400">
+                <h3 class="font-semibold text-lg mb-2">Kopidu App</h3>
+                <p class="text-sm text-gray-500 mb-4">A sleek Flutter mobile app for seamless food and coffee ordering.</p>
+                <div class="flex gap-2 mb-4">
+                    <span class="bg-gray-100 px-2 py-1 text-[10px] rounded">Flutter</span>
+                    <span class="bg-gray-100 px-2 py-1 text-[10px] rounded">Supabase</span>
+                    <span class="bg-gray-100 px-2 py-1 text-[10px] rounded">Dart</span>
+                </div>
+            </div>
+
+            <div class="lofi-card p-6 border-t-4 border-orange-400">
+                <h3 class="font-semibold text-lg mb-2">Kopidu Admin</h3>
+                <p class="text-sm text-gray-500 mb-4">Back-office management system for order tracking and inventory.</p>
+                <div class="flex gap-2">
+                    <span class="bg-gray-100 px-2 py-1 text-[10px] rounded">Data Visualization</span>
+                    <span class="bg-gray-100 px-2 py-1 text-[10px] rounded">Management</span>
+                </div>
+            </div>
+
+            <div class="lofi-card p-6 border-t-4 border-purple-400">
+                <h3 class="font-semibold text-lg mb-2">OOP POS System</h3>
+                <p class="text-sm text-gray-500 mb-4">University project implementing robust Object-Oriented principles.</p>
+                <div class="flex gap-2">
+                    <span class="bg-gray-100 px-2 py-1 text-[10px] rounded">Python</span>
+                    <span class="bg-gray-100 px-2 py-1 text-[10px] rounded">OOP Design</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="mb-16">
+        <h2 class="text-xl font-semibold mb-6">🎓 Education</h2>
+        <div class="lofi-card p-6">
+            <div class="flex justify-between items-center mb-2">
+                <h3 class="font-bold">Universiti Malaysia Sarawak (UNIMAS)</h3>
+                <span class="text-sm text-gray-400 italic">2023 - Present</span>
+            </div>
+            <p class="text-sm text-gray-600">Bachelor of Computer Science (Software Engineering)</p>
+            <p class="text-sm text-gray-500 mt-2 italic">Faculty of Computer Science and Information Technology (FCSIT)</p>
+        </div>
+    </section>
+
+    <section class="mb-16">
+        <h2 class="text-xl font-semibold mb-6">🎮 Off-duty Mode</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <div class="p-4 bg-white border rounded-xl">
+                <p class="text-xl mb-1">🎮</p>
+                <p class="text-xs font-medium">Gaming</p>
+            </div>
+            <div class="p-4 bg-white border rounded-xl">
+                <p class="text-xl mb-1">📱</p>
+                <p class="text-xs font-medium">Gadgets</p>
+            </div>
+            <div class="p-4 bg-white border rounded-xl">
+                <p class="text-xl mb-1">🎧</p>
+                <p class="text-xs font-medium">RnB Beats</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t pt-8 text-center text-gray-400 text-sm">
+        <p>© 2026 Crafted with ❤️ by Jazz.</p>
+        <div class="mt-4 flex justify-center gap-6">
+            <a href="https://github.com/yourusername" class="hover:text-emerald-600">GitHub</a>
+            <a href="#" class="hover:text-emerald-600">LinkedIn</a>
+            <a href="mailto:your@email.com" class="hover:text-emerald-600">Email</a>
+        </div>
+    </footer>
+
+</body>
+</html>
