@@ -1,0 +1,125 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0f172a;
+  color: #e2e8f0;
+  overflow-x: hidden;
+}
+
+.game-font {
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.65em;
+  letter-spacing: -1px;
+}
+
+@media (min-width: 768px) {
+  .game-font {
+    font-size: 0.8em;
+  }
+}
+
+.lofi-card,
+.off-duty-item,
+.spotify-compact-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 1rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.lofi-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px -5px rgba(185, 16, 154, 0.3);
+  border-color: #b9109a;
+}
+
+.spotify-compact-card {
+  cursor: pointer;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 240px;
+}
+
+.spotify-compact-card:hover {
+  border-color: #1db954;
+  background: #24334d;
+}
+
+.typing-wrapper {
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .typing-wrapper {
+    justify-content: flex-start;
+  }
+}
+
+.typing-container {
+  display: inline-flex;
+  overflow: hidden;
+  border-right: 0.15em solid #b9109a;
+  white-space: nowrap;
+  width: 0;
+}
+
+.animate-typing {
+  animation:
+    typing 2.5s steps(25, end) forwards,
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #b9109a;
+  }
+}
+
+@keyframes float {
+  0% { transform: translate(0, 0); }
+  33% { transform: translate(2px, -4px); }
+  66% { transform: translate(-2px, 2px); }
+  100% { transform: translate(0, 0); }
+}
+
+.animate-banner {
+  animation: float 8s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#player-section {
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.5s ease-in-out,
+    margin 0.5s ease;
+}
+#player-section.show {
+  max-height: 400px;
+  margin-top: 2rem;
+}
